@@ -4,7 +4,7 @@ Console.Write("Введите два числа: ");
 int number1 = Convert.ToInt32(Console.ReadLine());
 int number2 = Convert.ToInt32(Console.ReadLine()); */
 
-System.Console.Write("Введите целое число: ");
+Console.Write("Введите целое число: ");
 int number = Convert.ToInt32(Console.ReadLine());
 if (number == 1)
 {
