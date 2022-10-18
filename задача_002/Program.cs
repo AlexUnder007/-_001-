@@ -18,7 +18,6 @@ if (number1 == number2 * number2);
     Console.Write("Да");
 }
 else
-
 {
     Console.write("Нет");
 }
