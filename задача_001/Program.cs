@@ -1,18 +1,23 @@
-﻿// Напишите программу, которая 
-// 1. на вход примимает число и
-// 2. выдаёт его квадрат (число умнодения на само себя).
+﻿// Console.Write("Введите целое число целиком: ");
+// int number = Convert.ToInt32(Console.ReadLine());
+// int number = number * number;
 
-// Например:
-// 4 -> 16
-// -3 -> 9
-// -7 -> 49
+/*1. Напишите программу, которая на вход принимает два числа
+ и проверяет, является ли первое число квадратом второго.
 
-Console.Write("Введите целое число: ");
-int number = Convert.ToInt32 (Console.ReadLine());
+a = 25, b = 5 -> да
+a = 2, b = 10 -> нет
+a = 9, b =-3 -> да
+a = -3, b = 9 -> нет*/
 
-// string str = Console.ReadLine();
-// int num = Convert.ToInt32(str)
-
-int square = number * number;
-Console.WriteLine($"Квадрат числа: {number} = {square}");
-
+Console.Write("Введите два числа: ");
+int number1 = Convert.ToInt32(Console.ReadLine());
+int number2 = Convert.ToInt32(Console.ReadLine());
+if (number1 == number2 * number2)
+{
+Console.WriteLine("Да");
+}
+else
+{
+Console.WriteLine("Нет");
+}
