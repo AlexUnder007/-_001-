@@ -8,7 +8,7 @@
 Console.WriteLine("Введите число: ");
 int num = Convert.ToInt32(Console.ReadLine());
 int count = 0;
-if (num<=0) 
+if (num <= 0) 
 {
     Console.Write("Вы ввели число меньше либо равное \"0\".");
 }
