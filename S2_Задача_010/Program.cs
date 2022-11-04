@@ -19,12 +19,3 @@ if (number > 99 && number < 1000)
 
 
 else Console.Write("Надо ввести трёхначное число, попробуй ещё раз");
-
-// int result = DelSecondDigit(number);
-// Console.WriteLine($"Полученное число {result}");
-
-// int number2 = num / 10;
-// Console.WriteLine($"Полученное число {result}");
-
-
-
