@@ -3,27 +3,26 @@
 // показывает диапозон возмозных координат точек в этой области.
 
 
-
 Console.WriteLine("Введите коотрдинаты точки.");
-Console.Write("X: ");
-int x = Convert.ToInt32(Console.ReadLine());
-Console.Write("Y: ");
-int y = Convert.ToInt32(Console.ReadLine());
+int quarter = Convert.ToInt32(Console.ReadLine());
 
-int Quarter(int xc, int yc) // Quarter  - четверть
+
+string Quarter(int quarterXY) // Quarter  - четверть
 {
-    if (xc > 0 && yc > 0) return 1;        //Координаты
-    if (xc < 0 && yc > 0) return 2;
-    if (xc < 0 && yc < 0) return 3;
-    if (xc > 0 && yc < 0) return 4;
-    return 0;
+    if (quarterXY==1) return "x > 0, y > 0";        //Координаты
+    if (quarterXY==2) return "x < 0, y > 0";
+    if (quarterXY==3) return "x < 0, y < 0";
+    if (quarterXY==4) return "x > 0, y < 0";
+    return "введён некорректный номер сетверти";
 }
 
-int quarter = Quarter(x,y);
+string xy = Quarter(quarter);
+Console.Write($"Диапозон координат для четверти {quarter}: ");
+Console.WriteLine(xy);
 
 
-string result = quarter > 0 
-                ? $"Указанные координаты соответствуют -> {quarter} четверти." // тернарный оператор ?(if) ТОГДА
-                : "Введены некорректные координаты.";                          // :(else) ИНАЧЕ
+// string result = quarter > 0 
+//                 ? $"Указанные координаты соответствуют -> {quarter} четверти." // тернарный оператор ?(if) ТОГДА
+//                 : "Введены некорректные координаты.";                          // :(else) ИНАЧЕ
 
-Console.WriteLine(result);
+// Console.WriteLine(result);
