@@ -31,11 +31,11 @@ int y2 = Convert.ToInt32(Console.ReadLine());
 
 double Range(int x11, int y11,int x22, int y22)
 {
-    int rangeX = x11 - x22;
-    int rangeY = y11 - y22;
-    double rangeZ = Math.Sqrt(rangeX * rangeX + rangeY * rangeY);
+    int rangeX = x11 - x22;   //находим катеты
+    int rangeY = y11 - y22;   //находим катеты
+    double rangeZ = Math.Sqrt(rangeX * rangeX + rangeY * rangeY); //Кореньсуммы квадратов катетов
     return rangeZ;
 }
 
 double result = Range(x1,y1,x2,y2);
-Console.Write($"A({x1},{y1}); ({x2},{y2}) -> {Math.Round(result, 2, MidpointRounding.ToZero)}");
+Console.Write($"A({x1},{y1}); В ({x2},{y2}) -> {Math.Round(result, 2, MidpointRounding.ToZero)}");  //вывод с округлением
