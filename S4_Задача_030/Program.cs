@@ -25,8 +25,8 @@ void PrintArray(int[] array)  // Передаём значение массив�
     Console.Write("[");
     for (int i = 0; i < array.Length; i++)   // движение мо масиву
     {
-        Console.Write(array[i]);
-        if (i > array.Length - 1) Console.Write(",");
+        if(i < array.Length -1) Console.Write($"{array[i]},");
+        else Console.Write($"{array[i]}");
     }
     Console.Write("]");
 }
