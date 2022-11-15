@@ -3,3 +3,8 @@
 // находит расстояние между ними в 3D пространстве
 
 
+Console.Write("Введите пятизначное число: ");
+int num = Convert.ToInt32(Console.ReadLine());
+
+
+
