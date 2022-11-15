@@ -18,5 +18,5 @@ if (num <= 99999 && num >= 10000)
     if (num1 == num5 && num2 == num4) Console.WriteLine("Yes");
     else Console.WriteLine("No");
 }
-else Console.WriteLine("Введиде пятичначное число");
+else Console.WriteLine("Введно не пятичначное число");
 
