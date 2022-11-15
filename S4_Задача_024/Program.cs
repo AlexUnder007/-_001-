@@ -23,10 +23,3 @@ int SumNumbers(int number)
 
 int sumNumbers = SumNumbers(num);  //вызов метода
 Console.WriteLine($"Сумма чисел от 1 до {num} = {sumNumbers}");
-
-
-
-
-
-
-
