@@ -3,7 +3,7 @@
 // Пример:
 // [-4,-8,8,2],->[4,8,-8,-2]
 
-int[] CreateArrayRndInt(int size, int min, int max)
+int[] CreateArrayRndInt(int size, int min, int max) //создаём массив
 {
     int[] array = new int[size];
     Random rnd = new Random();
@@ -14,14 +14,12 @@ int[] CreateArrayRndInt(int size, int min, int max)
     return array;
 }
 
-int[] InversionArray(int[] array)
+void InversionArray(int[] arr)  //изменяем исходный массив
 {
-    int [] newArray = new int [array.Length];
-    for (int i = 0; i < array.Length; i++)
+    for (int i = 0; i < arr.Length; i++)
     {
-        newArray[i] = array[i] * (-1);
+        arr[i] *= -1;
     }
-    return newArray;
 }
 
 void PrintArray(int[]array)
@@ -35,7 +33,7 @@ void PrintArray(int[]array)
     Console.WriteLine(")");
 }
 
-int[] array = CreateArrayRndInt(18, -10, 10);
-int[] inversionArray = InversionArray(array);
-PrintArray(array);
-PrintArray(inversionArray);
+int[] array = CreateArrayRndInt(18, -10, 10); //вызываем метод, который создаём массив
+PrintArray(array);//выводим первый
+InversionArray(array); //инвертируем массив
+PrintArray(array);//выводим второй
