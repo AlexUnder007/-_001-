@@ -17,7 +17,7 @@ int DegreeOfNumber(int numA, int numB)
     int num = 1;
     while (count <= numB)
     {
-        num = num * numberA;
+        num = num * numA;
         count++;
     }
     return num;
