@@ -7,20 +7,17 @@
 -3 -> нет
 7 -> нет */
 
-internal class Program
+void Main(string[] args)
 {
-    private static void Main(string[] args)
-    {
-        Console.WriteLine("Введите число: ");
-        int number = Convert.ToInt32(Console.ReadLine());
+    Console.WriteLine("Введите число: ");
+    int number = Convert.ToInt32(Console.ReadLine());
 
-        if (number % 2 == 1)
-        {
-            Console.Write($"{number} Число нечётное ");
-        }
-        else
-        {
-            Console.Write($"{number} Число чётное ");
-        }
+    if (number % 2 == 1)
+    {
+        Console.Write($"{number} Число нечётное ");
+    }
+    else
+    {
+        Console.Write($"{number} Число чётное ");
     }
 }
