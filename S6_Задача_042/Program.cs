@@ -57,7 +57,7 @@
 
 
 // ______________________________________________________________________
-System.Console.WriteLine("Введите число десятичной системы исчисления");
+Console.WriteLine("Введите число десятичной системы исчисления");
 int number10 = Convert.ToInt32(Console.ReadLine());
 
 int ConvertToBin(int num10)
