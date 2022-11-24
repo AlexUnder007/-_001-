@@ -8,7 +8,8 @@
 
 // 9012 -> 12
 
-
+По задаче 27 суммировать нужно цифры, которые получаем остатком от деления на 10:
+sum = sum + number % 10;
 
 Console.WriteLine("Введите число");
 int num = Convert.ToInt32(Console.ReadLine());
@@ -21,7 +22,7 @@ int SumOfNumbers(int sum, int number);
     while (number > 0)
     {
         number = number / 10;
-
+        
         sum = sum + number;
         count++;
     }

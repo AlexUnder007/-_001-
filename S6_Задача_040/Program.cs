@@ -11,8 +11,9 @@ int num3 = Convert.ToInt32(Console.ReadLine());
 
 bool IsExsistTriangle(int numberA, int numberB, int numberC)
 {
-    bool b = numberA < numberB + numberC && numberB < numberA + numberC && numberC < numberA + numberB; //Условие. Каждая сторона треугольника меньше ссуммы двух сторон
-    return b;
+    // bool b = numberA < numberB + numberC && numberB < numberA + numberC && numberC < numberA + numberB; //Условие. Каждая сторона треугольника меньше ссуммы двух сторон
+    // return b;
+    return numberA < numberB + numberC && numberB < numberA + numberC && numberC < numberA + numberB; // вариант покороче
 }
 
 bool isExsistTriangle = IsExsistTriangle(num1,num2,num3);
